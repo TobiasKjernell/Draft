@@ -16,6 +16,7 @@ body {
 
 .header {
     padding: 3rem;
+  
 }
 
 .container {
@@ -59,11 +60,68 @@ body {
     padding: 1rem;
 }
 
+.progressInfo {
+    display: flex;
+    position: absolute;
+    top: 2rem;
+    left: 10rem;
+    text-align: center;
+}
+
+.progressItemContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+
+    p {
+        margin-left: 1rem;
+    }
+}
+
+.redBackground,
+.whiteBackground,
+.greenBackground {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.redBackground {
+    background-color: red;
+}
+
+.whiteBackground {
+    background-color: #fff;
+}
+
+.greenBackground {
+    background-color: greenyellow;
+}
+
+
 @media screen and (max-width: 1600px) {
 
     .tierContainer {
-     flex-direction: column;
-     height: auto;
-     width: auto;
+        flex-direction: column;
+        height: auto;
+        width: auto;
+    }
+
+    .progressInfo {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        
+        top: 0;
+        left: 0;
+    }
+
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: center;  
+        flex-direction: column;
+        padding: 0;
+        padding-top: 2rem;
     }
 }
