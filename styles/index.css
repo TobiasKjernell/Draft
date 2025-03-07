@@ -79,6 +79,10 @@ body {
     }
 }
 
+.red {
+    color: red;
+}
+
 .redBackground,
 .whiteBackground,
 .greenBackground {
